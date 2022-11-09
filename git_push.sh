@@ -2,11 +2,8 @@
 source script.sh
 
 GIT=`which git`
-${GIT} config user.name ${GIT_NAME}
-${GIT} config user.email ${GIT_EMAIL}
-${GIT} config user.password ${GIT_TOKEN}
 ${GIT} add .
 commit_message='"'$(date +%s)'"'
 ${GIT} commit -m "${commit_message}"
-${GIT} push
+${GIT} push https://${GIT_USER}:${GIT_TOKEN}@github.com/jamesholden097/asus-laptop HEAD
 #bash -c "${GIT} config --global user.name"
