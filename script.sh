@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Time=$(date +%s) > server.config
+echo Time=$(date +"%Y-%m-%d-%T") > server.config
 echo ROS_IP=${ROS_IP} >> server.config
 echo ROS_HOSTNAME=${ROS_HOSTNAME} >> server.config
 echo ROS_MASTER_URI=${ROS_MASTER_URI} >> server.config
