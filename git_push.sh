@@ -5,4 +5,4 @@ ${GIT} add .
 commit_message='"'$(date +%s)'"'
 ${GIT} commit -m "${commit_message}"
 ${GIT} push
-
+#bash -c "${GIT} config --global user.name"
